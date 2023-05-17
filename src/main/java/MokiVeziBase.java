@@ -7,13 +7,17 @@ public class MokiVeziBase {
    protected static WebDriver driver;
 
 
+
    public MokiVeziBase(WebDriver driver) {
       MokiVeziBase.driver = driver;
       driver.manage().window().maximize();
       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
    }
-         public void goTo () {
+         public static void goTo () {
          driver.get("https://mokivezi.lt");
+
+      }
+      protected void MokiVeziBase(){
 
       }
    }
