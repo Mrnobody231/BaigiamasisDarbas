@@ -97,13 +97,9 @@ public class MokiVeziUzsiregistruoti extends MokiVeziBase {
 
 
             String url = "jdbc:postgresql://localhost/MokiVeziData";
-            String dbmokivezivardas = "mokiVeziVardas";
-            String dbmokivezipavarde = "mokiVeziPavarde";
-            String dbmokivezitelefonoNr = "mokiVeziTelefonoNr";
-            String dbmokivezislaptazodis = "mokiVeziSlaptazodis";
-
-            try (Connection connection = DriverManager.getConnection(url, dbmokivezivardas, dbmokivezipavarde,
-                    dbmokivezitelefonoNr, dbmokivezislaptazodis)) {
+            String user = "postgres";
+            String password = "123456";
+            try (Connection connection = DriverManager.getConnection(url, user,password)){
                 String sql = "INSERT INTO mokiVezi(mokiVeziVardas, mokiVeziPavarde, mokiVeziTelefonoNr, mokiVeziSlaptazodis)" +
                         "Values (?, ?, ?, ?)";
 
@@ -125,7 +121,6 @@ public class MokiVeziUzsiregistruoti extends MokiVeziBase {
             }
         }
     }
-
 
 
 

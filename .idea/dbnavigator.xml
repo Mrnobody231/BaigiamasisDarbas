@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="a9004dce-2417-45c7-9c96-0d4a965edfad">
-      <console name="Connection" type="STANDARD" schema="MokiVeziData" session="Main" />
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * from mokiVezi]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -24,6 +24,9 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="a9004dce-2417-45c7-9c96-0d4a965edfad" dataset="public.mokivezi" active-filter-id="" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -513,5 +516,8 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
   </component>
 </project>
